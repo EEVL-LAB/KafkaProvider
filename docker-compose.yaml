@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  backend:
+    build:
+      context: .
+    image: 705373246515.dkr.ecr.ap-northeast-2.amazonaws.com/kafka/consumer:0.0.1
+    environment:
+      MODE: dev
+      KAFKA_HOST: kafka.eevl.studio
+      KAFKA_HOST_0: aaf468849f8a049cdad1e4fac615813d-779174101.ap-northeast-2.elb.amazonaws.com
+      KAFKA_HOST_1: a980ff85dfcf84c44a147a837f20d397-1149970735.ap-northeast-2.elb.amazonaws.com
+      KAFKA_HOST_2: a41af9ed8e742410f9f51d111e35040a-130931382.ap-northeast-2.elb.amazonaws.com
+      KAFKA_TOPIC: scraping
