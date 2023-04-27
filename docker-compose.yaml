@@ -5,11 +5,11 @@ services:
       context: .
     image: 705373246515.dkr.ecr.ap-northeast-2.amazonaws.com/consumer:1.0.0
     environment:
-      KAFKA_HOST_0: aaf468849f8a049cdad1e4fac615813d-779174101.ap-northeast-2.elb.amazonaws.com
-      KAFKA_HOST_1: a980ff85dfcf84c44a147a837f20d397-1149970735.ap-northeast-2.elb.amazonaws.com
-      KAFKA_HOST_2: a41af9ed8e742410f9f51d111e35040a-130931382.ap-northeast-2.elb.amazonaws.com
-      AWS_ACCESS_KEY_ID: AKIA2IO4FSQZURXYLDEK
-      AWS_SECRET_ACCESS_KEY: RUQnnjJz7tlpj4HD53ThJeL20mfVZBKq0xmHya3M
+      KAFKA_HOST_0: host0
+      KAFKA_HOST_1: host1
+      KAFKA_HOST_2: host2
+      AWS_ACCESS_KEY_ID: your_access
+      AWS_SECRET_ACCESS_KEY: your_secret
       AWS_DEFAULT_REGION: ap-northeast-2
       KAFKA_TOPIC: scraping
       KAFKA_OFFSET_RESET: earliest
