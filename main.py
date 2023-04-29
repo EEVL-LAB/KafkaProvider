@@ -9,6 +9,7 @@ loop = asyncio.get_event_loop()
 async def change_ddb_data(producer_data) :
     ddb_data = {
         "URL": producer_data["url"],
+        "Date": producer_data["date"],
         "Title": producer_data["title"],
         "Cotents": producer_data["contents"],
         "CotentPlainText": producer_data["content_plain_text"],
