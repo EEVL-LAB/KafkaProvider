@@ -16,7 +16,7 @@ async def change_ddb_data(producer_data) :
         "Thumbnails": producer_data["thumbnails"],
         "TargetKeyword": producer_data["target_keyword"],
         "ChannelKeyname": producer_data["channel_keyname"],
-        "CRC": str(producer_data["crc"])
+        "CRC": int(producer_data["crc"])
     }
     return ddb_data
 

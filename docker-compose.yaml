@@ -3,7 +3,7 @@ services:
   backend:
     build:
       context: .
-    image: 705373246515.dkr.ecr.ap-northeast-2.amazonaws.com/consumer:1.0.1
+    image: 705373246515.dkr.ecr.ap-northeast-2.amazonaws.com/consumer:1.1.0
     environment:
       KAFKA_HOST_0: host0
       KAFKA_HOST_1: host1
